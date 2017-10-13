@@ -319,12 +319,17 @@ h1{
 #display_img{
     margin-bottom:5px;
 }
-
+#list_img{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap:wrap;
+    align-content:  space-between;
+}
 #products{
     background-color:#fff;
     margin-left: -10px;
     width: 106.7%;
-    padding:20px 10px 15px 10px;
+    padding:20px 4% 15px 3%;
     box-sizing:border-box;
 
     h1{
@@ -347,10 +352,9 @@ h1{
         }
         li {
             list-style: none;
-            display: inline-block;
-            width: 18.63%;
             margin-top: 5px;
             margin-bottom:0px;
+            width:19%;
         }
         li img {
             cursor: pointer;
@@ -451,7 +455,7 @@ h1{
     @media(min-width:551px){
         margin-left: 0px;
         width: 100%;
-        padding: 35px 65px;
+        padding: 35px 11%;
 
         .name_container{
             display:flex;
@@ -465,22 +469,16 @@ h1{
 
         .img_container{
             display:flex;
-            justify-content: space-between;
             padding: 20px 0px;
 
             #display_img{
-                width:410px;
+                flex:3;
                 margin-bottom: 0px;
             }
             #list_img{
                 flex:1;
                 margin-left:10px;
 
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: space-between;
-                align-content:  space-between;
-                
                 li{
                     width:48%;
                     

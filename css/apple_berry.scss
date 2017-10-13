@@ -696,23 +696,27 @@ h1{
         text-align:right;
         margin-top:60px;
         margin-bottom:0px;
-    }
+    }//PC用
 }
 .footer{
     @include text-center();
     color:#000000;
     @include fontsize(11);
 
-
-    
-    p{
+    p.footer_container{
         margin-bottom:10px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
     }
-    p.pc_header{
-        @include fontsize(12);
-        margin:30px 0px;
-    }
-
+    
+    @media (min-width:551px){
+        p.footer_container{
+            @include fontsize(12);
+            margin:30px 0px;
+        }
+    }//PC用
+    
     #copyright{
         color:#b8b4ac;
         @include fontsize(10);
